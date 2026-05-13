@@ -47,9 +47,9 @@ var current_stage: TutorialStage = TutorialStage.INTRO
 var _selected_project_shape: Dictionary = {}
 
 # Referências injetadas pelo OfficeDay.tscn
-@onready var _dialogue_box: Control = $"../DialogueBox"
+@onready var _dialogue_box: DialogueBox = $"../DialogueBox"
 @onready var _rhythm_system: RhythmSystem = $"../RhythmSystem"
-@onready var _animanium_ui: Control = $"../AnimaniumSelectUI"
+@onready var _animanium_ui: AnimaniumSelectUI = $"../AnimaniumSelectUI"
 @onready var _presentation_battle: Node = $"../PresentationBattle"
 
 

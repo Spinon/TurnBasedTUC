@@ -26,7 +26,7 @@ var _selected_shape: Dictionary = {}
 var _battle_active: bool = false
 
 @onready var _rhythm_system: RhythmSystem = $"../RhythmSystem"
-@onready var _dialogue_box: Control = $"../DialogueBox"
+@onready var _dialogue_box: DialogueBox = $"../DialogueBox"
 @onready var _conviction_bar: ProgressBar = $"../ConvictionBar"
 
 
