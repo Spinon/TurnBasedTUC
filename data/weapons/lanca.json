@@ -1,0 +1,61 @@
+{
+	"id": "lanca",
+	"name": "Lança de Animanium",
+	"type": "lance",
+	"description": "A arma mais poderosa que Leo cria no Livro 1. Exige domínio — o Animanium precisa sustentar uma haste longa sem colapsar.",
+	"base_atk": 36,
+	"base_def_bonus": 4,
+	"music_theme": "lanca",
+	"unlock_sector": 9,
+	"skills": [
+		{
+			"id": "golpe_de_lanca",
+			"name": "Golpe de Lança",
+			"description": "Estocada direta. Alcance longo, força concentrada na ponta.",
+			"type": "physical",
+			"power": 1.0,
+			"rhythm_beats": 0,
+			"mp_cost": 0,
+			"is_basic_attack": true,
+			"music_variation": null
+		},
+		{
+			"id": "perfuracao",
+			"name": "Perfuração",
+			"description": "Leo concentra toda a massa do Animanium na ponta — atravessa qualquer defesa.",
+			"type": "physical",
+			"power": 2.0,
+			"rhythm_beats": 2,
+			"mp_cost": 14,
+			"def_pierce": 0.6,
+			"target": "single_enemy",
+			"perfect_effect": "stun",
+			"music_variation": "lanca_perfuracao"
+		},
+		{
+			"id": "varredura",
+			"name": "Varredura",
+			"description": "Leo gira a lança — a haste longa atinge todos ao redor num arco amplo.",
+			"type": "physical",
+			"power": 1.3,
+			"rhythm_beats": 3,
+			"mp_cost": 20,
+			"target": "all_enemies",
+			"perfect_effect": "recover_mp",
+			"music_variation": "lanca_varredura"
+		},
+		{
+			"id": "mergulho_de_lanca",
+			"name": "Mergulho de Lança",
+			"description": "Leo salta e desce a lança com todo o peso do corpo — o golpe mais devastador da arma.",
+			"type": "physical",
+			"power": 3.5,
+			"rhythm_beats": 4,
+			"mp_cost": 32,
+			"def_pierce": 0.4,
+			"target": "single_enemy",
+			"perfect_effect": "double",
+			"music_variation": "lanca_mergulho"
+		}
+	]
+}

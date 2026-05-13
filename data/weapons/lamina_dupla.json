@@ -1,0 +1,62 @@
+{
+	"id": "lamina_dupla",
+	"name": "Lâminas Duplas de Animanium",
+	"type": "dual_blade",
+	"description": "Leo descobre que pode sustentar duas lâminas simultaneamente — exige mais concentração, entrega mais.",
+	"base_atk": 30,
+	"base_def_bonus": -4,
+	"music_theme": "lamina_dupla",
+	"unlock_sector": 5,
+	"skills": [
+		{
+			"id": "corte_duplo",
+			"name": "Corte Duplo",
+			"description": "Dois golpes simultâneos — mais dano base que a lâmina única.",
+			"type": "physical",
+			"power": 0.8,
+			"hits": 2,
+			"rhythm_beats": 0,
+			"mp_cost": 0,
+			"is_basic_attack": true,
+			"music_variation": null
+		},
+		{
+			"id": "danca_de_laminas",
+			"name": "Dança de Lâminas",
+			"description": "Leo entra em fluxo — cada beat é uma alternância entre as duas lâminas.",
+			"type": "physical",
+			"power": 0.7,
+			"hits": 4,
+			"rhythm_beats": 3,
+			"mp_cost": 14,
+			"target": "single_enemy",
+			"perfect_effect": "recover_mp",
+			"music_variation": "dupla_danca"
+		},
+		{
+			"id": "tempestade_de_aco",
+			"name": "Tempestade de Aço",
+			"description": "Leo gira — as lâminas atingem todos os inimigos em arco.",
+			"type": "physical",
+			"power": 1.1,
+			"rhythm_beats": 3,
+			"mp_cost": 18,
+			"target": "all_enemies",
+			"perfect_effect": "stun",
+			"music_variation": "dupla_tempestade"
+		},
+		{
+			"id": "execucao",
+			"name": "Execução",
+			"description": "As duas lâminas convergem num único ponto — dano massivo em alvo único. Risco alto, recompensa alta.",
+			"type": "physical",
+			"power": 3.0,
+			"rhythm_beats": 4,
+			"mp_cost": 28,
+			"def_pierce": 0.5,
+			"target": "single_enemy",
+			"perfect_effect": "double",
+			"music_variation": "dupla_execucao"
+		}
+	]
+}

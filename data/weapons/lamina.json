@@ -1,0 +1,63 @@
+{
+	"id": "lamina",
+	"name": "Lâmina de Animanium",
+	"type": "blade",
+	"description": "Leo aprende a afinar o metal em gume. Mais risco, mais dano.",
+	"base_atk": 26,
+	"base_def_bonus": 0,
+	"music_theme": "lamina",
+	"unlock_sector": 3,
+	"skills": [
+		{
+			"id": "corte",
+			"name": "Corte",
+			"description": "Golpe básico com a lâmina. Limpo e direto.",
+			"type": "physical",
+			"power": 1.0,
+			"rhythm_beats": 0,
+			"mp_cost": 0,
+			"is_basic_attack": true,
+			"music_variation": null
+		},
+		{
+			"id": "corte_veloz",
+			"name": "Corte Veloz",
+			"description": "Slash rápido que aproveita a leveza do Animanium.",
+			"type": "physical",
+			"power": 1.4,
+			"rhythm_beats": 2,
+			"mp_cost": 9,
+			"target": "single_enemy",
+			"perfect_effect": "recover_mp",
+			"music_variation": "lamina_veloz"
+		},
+		{
+			"id": "rajada_de_cortes",
+			"name": "Rajada de Cortes",
+			"description": "Três golpes em sequência — cada beat sincroniza um corte diferente.",
+			"type": "physical",
+			"power": 0.8,
+			"hits": 3,
+			"rhythm_beats": 3,
+			"mp_cost": 16,
+			"target": "single_enemy",
+			"perfect_effect": "double",
+			"music_variation": "lamina_rajada"
+		},
+		{
+			"id": "fenda_cortante",
+			"name": "Fenda Cortante",
+			"description": "Leo rasga o espaço à frente — dano alto e causa sangramento.",
+			"type": "physical",
+			"power": 2.2,
+			"rhythm_beats": 4,
+			"mp_cost": 24,
+			"def_pierce": 0.3,
+			"target": "single_enemy",
+			"status": "bleed",
+			"status_duration": 3,
+			"perfect_effect": "stun",
+			"music_variation": "lamina_fenda"
+		}
+	]
+}

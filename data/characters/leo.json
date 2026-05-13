@@ -4,114 +4,13 @@
 	"is_enemy": false,
 	"max_hp": 320,
 	"max_mp": 80,
-	"max_echo": 50,
-	"atk": 28,
+	"max_echo": 0,
+	"atk": 20,
 	"mag": 22,
-	"def": 18,
+	"def": 14,
 	"res": 14,
 	"spd": 16,
-	"skills": [
-		{
-			"id": "golpe_de_metal",
-			"name": "Golpe de Metal",
-			"description": "Leo molda um fragmento de Animanium e golpeia o inimigo.",
-			"type": "physical",
-			"power": 1.4,
-			"mp_cost": 8,
-			"echo_cost": 0,
-			"target": "single_enemy",
-			"animation": "slash"
-		},
-		{
-			"id": "lanca_animanium",
-			"name": "Lança de Animanium",
-			"description": "Projeta uma lança de metal líquido com precisão perfurante.",
-			"type": "physical",
-			"power": 1.8,
-			"mp_cost": 14,
-			"echo_cost": 0,
-			"target": "single_enemy",
-			"animation": "pierce"
-		},
-		{
-			"id": "escudo_metalico",
-			"name": "Escudo Metálico",
-			"description": "Leo forma um escudo de Animanium ao redor de um aliado. +DEF por 3 turnos.",
-			"type": "buff",
-			"power": 0.0,
-			"mp_cost": 10,
-			"echo_cost": 0,
-			"target": "single_ally",
-			"buff_stat": "def",
-			"buff_multiplier": 1.4,
-			"buff_duration": 3,
-			"animation": "shield_pulse"
-		},
-		{
-			"id": "forma_afiada",
-			"name": "Forma Afiada",
-			"description": "Leo afina a mecha — libera um pulso de energia que amplifica seu próprio ATK.",
-			"type": "buff",
-			"power": 0.0,
-			"mp_cost": 12,
-			"echo_cost": 0,
-			"target": "self",
-			"buff_stat": "atk",
-			"buff_multiplier": 1.5,
-			"buff_duration": 3,
-			"animation": "mecha_glow"
-		}
-	],
-	"aiko_skills": [
-		{
-			"id": "pulso_de_eco",
-			"name": "Pulso de Eco",
-			"description": "Aiko age por Leo — emite um pulso psíquico que atravessa defesas físicas.",
-			"type": "echo",
-			"power": 1.6,
-			"mp_cost": 0,
-			"echo_cost": 12,
-			"target": "single_enemy",
-			"animation": "echo_wave"
-		},
-		{
-			"id": "voz_da_nevoa",
-			"name": "Voz da Névoa",
-			"description": "Aiko sussurra fragmentos de universos — reduz RES do inimigo por 3 turnos.",
-			"type": "buff",
-			"power": 0.0,
-			"mp_cost": 0,
-			"echo_cost": 10,
-			"target": "single_enemy",
-			"buff_stat": "res",
-			"buff_multiplier": 0.7,
-			"buff_duration": 3,
-			"animation": "mist_whisper"
-		},
-		{
-			"id": "ressonancia",
-			"name": "Ressonância",
-			"description": "Aiko amplifica o elo entre mundos — aumenta MAG de um aliado por 2 turnos.",
-			"type": "buff",
-			"power": 0.0,
-			"mp_cost": 0,
-			"echo_cost": 14,
-			"target": "single_ally",
-			"buff_stat": "mag",
-			"buff_multiplier": 1.4,
-			"buff_duration": 2,
-			"animation": "resonance_pulse"
-		},
-		{
-			"id": "fragmento_de_memoria",
-			"name": "Fragmento de Memória",
-			"description": "Aiko evoca uma memória de cura — restaura HP de um aliado.",
-			"type": "heal",
-			"power": 1.2,
-			"mp_cost": 0,
-			"echo_cost": 18,
-			"target": "single_ally",
-			"animation": "memory_bloom"
-		}
-	]
+	"starting_weapon": "escudo",
+	"skills": [],
+	"aiko_skills": []
 }

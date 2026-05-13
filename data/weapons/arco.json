@@ -1,0 +1,63 @@
+{
+	"id": "arco",
+	"name": "Arco de Animanium",
+	"type": "bow",
+	"description": "Leo aprende que nem sempre é preciso chegar perto. O arco exige calma — o ritmo aqui é diferente: mais lento, mais preciso.",
+	"base_atk": 28,
+	"base_def_bonus": -2,
+	"music_theme": "arco",
+	"unlock_sector": 6,
+	"skills": [
+		{
+			"id": "flecha_basica",
+			"name": "Flecha",
+			"description": "Disparo simples. Animanium se condensa numa ponta e é lançado.",
+			"type": "physical",
+			"power": 1.0,
+			"rhythm_beats": 0,
+			"mp_cost": 0,
+			"is_basic_attack": true,
+			"music_variation": null
+		},
+		{
+			"id": "flecha_precisa",
+			"name": "Flecha Precisa",
+			"description": "Leo respira fundo — o timing aqui é sobre segurar, não sobre bater rápido.",
+			"type": "physical",
+			"power": 1.8,
+			"rhythm_beats": 2,
+			"mp_cost": 10,
+			"def_pierce": 0.4,
+			"target": "single_enemy",
+			"perfect_effect": "stun",
+			"music_variation": "arco_precisa",
+			"beat_style": "hold"
+		},
+		{
+			"id": "chuva_de_flechas",
+			"name": "Chuva de Flechas",
+			"description": "Leo dispara múltiplos fragmentos de Animanium em arco — cobre toda a linha inimiga.",
+			"type": "physical",
+			"power": 0.9,
+			"rhythm_beats": 3,
+			"mp_cost": 18,
+			"target": "all_enemies",
+			"perfect_effect": "recover_mp",
+			"music_variation": "arco_chuva"
+		},
+		{
+			"id": "flecha_de_eco",
+			"name": "Flecha de Eco",
+			"description": "Aiko guia a trajetória — a flecha muda de direção no ar e pode atingir um segundo alvo.",
+			"type": "physical",
+			"power": 2.0,
+			"rhythm_beats": 4,
+			"mp_cost": 26,
+			"hits": 2,
+			"target": "single_enemy",
+			"perfect_effect": "double",
+			"music_variation": "arco_eco",
+			"note": "Única skill que carrega a voz de Aiko mesmo sendo do Leo"
+		}
+	]
+}
