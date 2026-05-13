@@ -9,7 +9,7 @@ config_version=5
 config/name="TUC - Teoria dos Universos Conectados"
 config/description="RPG de turno baseado no Livro 1 da saga Teoria dos Universos Conectados"
 config/version="0.1.0"
-run/main_scene="res://scenes/main_menu/MainMenu.tscn"
+run/main_scene="res://scenes/cinematic/OpeningCinematic.tscn"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://assets/sprites/ui/icon.png"
 
