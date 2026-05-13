@@ -1,0 +1,52 @@
+{
+	"id": "marcos",
+	"name": "Marcos",
+	"display_name": "Marcos (Chefe de Projeto)",
+	"is_enemy": true,
+	"battle_type": "presentation",
+	"max_hp": 0,
+	"max_conviction": 1.0,
+	"conviction_drain_per_objection": 0.20,
+	"max_rounds": 6,
+	"atk": 0,
+	"mag": 0,
+	"def": 0,
+	"res": 0,
+	"spd": 0,
+	"portrait": "res://assets/portraits/marcos_placeholder.png",
+	"objections": [
+		{
+			"id": "cost",
+			"text": "Isso não resolve o problema de custo.",
+			"weight": 1.0
+		},
+		{
+			"id": "deadline",
+			"text": "O cliente nunca vai aceitar esse prazo.",
+			"weight": 1.0
+		},
+		{
+			"id": "precedent",
+			"text": "Já tentamos algo parecido no trimestre passado.",
+			"weight": 1.2
+		},
+		{
+			"id": "data",
+			"text": "Você tem dados que suportam essa abordagem?",
+			"weight": 1.0
+		},
+		{
+			"id": "board",
+			"text": "O board não vai aprovar sem mais detalhes.",
+			"weight": 1.5
+		},
+		{
+			"id": "competition",
+			"text": "Seu concorrente interno propôs algo mais barato.",
+			"weight": 1.2
+		}
+	],
+	"victory_text": "...Tá. Me convenceu.\nÉ isso que vamos apresentar pro cliente.",
+	"stalemate_text": "Olha, o tempo acabou.\nPrecisa ser mais direto, Leo.",
+	"narrative_note": "Marcos não é um vilão — é um chefe pragmático. A luta com ele é sobre persuasão, não combate. Não tem game-over aqui."
+}

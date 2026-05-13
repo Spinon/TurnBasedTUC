@@ -1,0 +1,36 @@
+{
+	"tasks": [
+		{
+			"id": "impact_report",
+			"label": "Relatório de Impacto de Fenda",
+			"narrative": "Mais um relatório de impacto de fenda...\nPreciso focar — o prazo é hoje.",
+			"rhythm_beats": 2,
+			"tutorial_hint": "[ Pressione o botão no tempo certo para manter o ritmo de trabalho. ]",
+			"feedback": {
+				"perfect": "Perfeito.\nToda palavra no lugar certo.",
+				"good": "Quase lá.\nBom o suficiente por hoje.",
+				"ok": "Poderia ter sido melhor.\nMas está feito.",
+				"poor": "Droga...\nMelhor revisar antes de mandar."
+			}
+		},
+		{
+			"id": "containment_sheet",
+			"label": "Planilha de Contenção",
+			"narrative": "Agora as planilhas de contenção.\nSe eu acertar o ritmo direito, termino antes do almoço.",
+			"rhythm_beats": 3,
+			"tutorial_hint": "[ Ritmo mais longo desta vez. Não tropece no final. ]",
+			"feedback": {
+				"perfect": "Perfeito.\nToda linha alinhada.",
+				"good": "Ficou decente.\nMarcos vai aceitar.",
+				"ok": "Meh.\nFaz o serviço.",
+				"poor": "Que bagunça...\nMas não dá tempo de refazer."
+			}
+		}
+	],
+	"project_select": {
+		"narrative": "Marcos quer ver três propostas de contenção.\nQual estrutura eu apresento?",
+		"tutorial_hint": "[ Escolha um formato de apresentação entre as três opções. ]",
+		"shape_pool_override": null,
+		"note": "shape_pool_override null = usa o pool padrão do AnimaniumSystem (tier 1 = 3 formas)"
+	}
+}
