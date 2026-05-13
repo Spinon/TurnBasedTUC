@@ -1,0 +1,185 @@
+[
+	{
+		"id": "lanca",
+		"name": "Lança",
+		"tier": 1,
+		"description": "Uma linha reta e afiada — o primeiro formato que Aiko ensina a Leo.",
+		"icon": "res://assets/sprites/ui/shapes/lanca.png",
+		"template_points": [[0.5, 0.9], [0.5, 0.1]],
+		"effect": {
+			"type": "physical",
+			"power_multiplier": 1.6,
+			"def_pierce": 0.35,
+			"target": "single_enemy",
+			"special_flavor": "O Animanium se alonga numa ponta precisa."
+		}
+	},
+	{
+		"id": "escudo_plano",
+		"name": "Escudo Plano",
+		"tier": 1,
+		"description": "Uma barra horizontal — forma defensiva básica.",
+		"icon": "res://assets/sprites/ui/shapes/escudo_plano.png",
+		"template_points": [[0.1, 0.5], [0.9, 0.5]],
+		"effect": {
+			"type": "shield",
+			"shield_hp": 60,
+			"target": "single_ally",
+			"special_flavor": "O metal se achata num escudo firme."
+		}
+	},
+	{
+		"id": "cunha",
+		"name": "Cunha",
+		"tier": 1,
+		"description": "Um triângulo largo — dispersa o impacto em área.",
+		"icon": "res://assets/sprites/ui/shapes/cunha.png",
+		"template_points": [[0.5, 0.1], [0.1, 0.9], [0.9, 0.9]],
+		"effect": {
+			"type": "physical",
+			"power_multiplier": 1.0,
+			"target": "all_enemies",
+			"special_flavor": "O metal se expande como uma onda."
+		}
+	},
+	{
+		"id": "espiral",
+		"name": "Espiral",
+		"tier": 2,
+		"description": "Uma curva que se enrola — Aiko sorri quando Leo consegue pela primeira vez.",
+		"icon": "res://assets/sprites/ui/shapes/espiral.png",
+		"template_points": [[0.5,0.5],[0.7,0.4],[0.8,0.6],[0.6,0.8],[0.3,0.7],[0.2,0.4],[0.4,0.2]],
+		"effect": {
+			"type": "status",
+			"power_multiplier": 0.9,
+			"status": "slow",
+			"status_duration": 3,
+			"target": "single_enemy",
+			"special_flavor": "O metal envolve o inimigo, prendendo seus movimentos."
+		}
+	},
+	{
+		"id": "gancho",
+		"name": "Gancho",
+		"tier": 2,
+		"description": "Uma curva com ponta — puxa o inimigo para posição vulnerável.",
+		"icon": "res://assets/sprites/ui/shapes/gancho.png",
+		"template_points": [[0.2, 0.2], [0.8, 0.2], [0.8, 0.7], [0.5, 0.9]],
+		"effect": {
+			"type": "debuff",
+			"power_multiplier": 0.7,
+			"buff_stat": "def",
+			"buff_multiplier": 0.6,
+			"buff_duration": 2,
+			"target": "single_enemy",
+			"special_flavor": "O metal curvo arrasta e expõe o inimigo."
+		}
+	},
+	{
+		"id": "anel",
+		"name": "Anel",
+		"tier": 2,
+		"description": "Um círculo fechado — canaliza energia de proteção.",
+		"icon": "res://assets/sprites/ui/shapes/anel.png",
+		"template_points": [[0.5,0.1],[0.9,0.5],[0.5,0.9],[0.1,0.5],[0.5,0.1]],
+		"effect": {
+			"type": "buff",
+			"buff_stat": "res",
+			"buff_multiplier": 1.5,
+			"buff_duration": 3,
+			"target": "all_allies",
+			"special_flavor": "O anel de metal pulsa ao redor da party."
+		}
+	},
+	{
+		"id": "estrela",
+		"name": "Estrela",
+		"tier": 3,
+		"description": "Cinco pontas irradiando do centro — requer concentração e sintonia com Aiko.",
+		"icon": "res://assets/sprites/ui/shapes/estrela.png",
+		"template_points": [[0.5,0.1],[0.6,0.4],[0.9,0.4],[0.7,0.6],[0.8,0.9],[0.5,0.7],[0.2,0.9],[0.3,0.6],[0.1,0.4],[0.4,0.4]],
+		"effect": {
+			"type": "physical",
+			"power_multiplier": 2.2,
+			"stun_chance": 0.3,
+			"target": "single_enemy",
+			"special_flavor": "Cinco fragmentos convergem num impacto devastador."
+		}
+	},
+	{
+		"id": "ondas",
+		"name": "Ondas",
+		"tier": 3,
+		"description": "Linhas onduladas — o Animanium vibra em frequência com Aiko.",
+		"icon": "res://assets/sprites/ui/shapes/ondas.png",
+		"template_points": [[0.1,0.5],[0.3,0.2],[0.5,0.5],[0.7,0.2],[0.9,0.5]],
+		"effect": {
+			"type": "echo",
+			"power_multiplier": 1.4,
+			"echo_cost_reduction": 5,
+			"target": "all_enemies",
+			"special_flavor": "As ondas de metal ressoam com a voz de Aiko."
+		}
+	},
+	{
+		"id": "cruz",
+		"name": "Cruz",
+		"tier": 3,
+		"description": "Duas linhas perpendiculares — equilíbrio entre ataque e defesa.",
+		"icon": "res://assets/sprites/ui/shapes/cruz.png",
+		"template_points": [[0.5,0.1],[0.5,0.9],[0.1,0.5],[0.9,0.5]],
+		"effect": {
+			"type": "hybrid",
+			"power_multiplier": 1.3,
+			"shield_hp": 30,
+			"target": "single_enemy",
+			"shield_target": "self",
+			"special_flavor": "Atacar e defender ao mesmo tempo — técnica rara."
+		}
+	},
+	{
+		"id": "flecha_dupla",
+		"name": "Flecha Dupla",
+		"tier": 4,
+		"description": "Duas lanças paralelas — Leo e Aiko em perfeita sincronia.",
+		"icon": "res://assets/sprites/ui/shapes/flecha_dupla.png",
+		"template_points": [[0.35,0.9],[0.35,0.1],[0.65,0.9],[0.65,0.1]],
+		"effect": {
+			"type": "physical",
+			"power_multiplier": 1.5,
+			"hits": 2,
+			"target": "single_enemy",
+			"special_flavor": "Dois impactos simultâneos — Leo e Aiko como um só."
+		}
+	},
+	{
+		"id": "espiral_aberta",
+		"name": "Espiral Aberta",
+		"tier": 4,
+		"description": "Uma espiral que não fecha — libera energia ao invés de conter.",
+		"icon": "res://assets/sprites/ui/shapes/espiral_aberta.png",
+		"template_points": [[0.8,0.5],[0.6,0.2],[0.3,0.3],[0.2,0.6],[0.4,0.8],[0.7,0.7]],
+		"effect": {
+			"type": "echo",
+			"power_multiplier": 2.0,
+			"target": "all_enemies",
+			"special_flavor": "A energia de Aiko explode para fora sem contenção."
+		}
+	},
+	{
+		"id": "fenda",
+		"name": "Fenda",
+		"tier": 4,
+		"description": "Uma linha diagonal rasgada — imita a fenda dimensional que trouxe Leo a este mundo.",
+		"icon": "res://assets/sprites/ui/shapes/fenda.png",
+		"template_points": [[0.1,0.1],[0.4,0.45],[0.3,0.55],[0.9,0.9]],
+		"effect": {
+			"type": "dimensional",
+			"power_multiplier": 2.8,
+			"ignore_def": true,
+			"ignore_res": true,
+			"target": "single_enemy",
+			"special_flavor": "O Animanium rasga o espaço — o golpe mais poderoso de Leo."
+		}
+	}
+]
