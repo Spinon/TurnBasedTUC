@@ -16,10 +16,10 @@ const AUTO_ADVANCE_DELAY := 1.2   # segundos após texto completo antes de avan�
 @onready var _illustration: TextureRect = $Illustration      # placeholder até ter arte
 @onready var _overlay: ColorRect = $Overlay                  # fade preto
 @onready var _text_box: PanelContainer = $TextBox
-@onready var _text_label: RichTextLabel = $TextBox/Text
-@onready var _speaker_label: Label = $TextBox/Speaker
+@onready var _text_label: RichTextLabel = $TextBox/VBox/Text
+@onready var _speaker_label: Label = $TextBox/VBox/Speaker
 @onready var _continue_hint: Label = $ContinueHint          # "▶ continuar"
-@onready var _particles: GPUParticles2D = $AtmosphereParticles
+@onready var _particles: CPUParticles2D = $AtmosphereParticles
 
 var _panels: Array[Dictionary] = []
 var _current_index: int = 0

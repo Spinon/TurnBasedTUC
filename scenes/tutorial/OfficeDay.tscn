@@ -1,0 +1,88 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/tutorial/TutorialManager.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/battle/RhythmSystem.gd" id="2"]
+[ext_resource type="Script" path="res://scripts/tutorial/PresentationBattle.gd" id="3"]
+[ext_resource type="PackedScene" path="res://scenes/ui/DialogueBox.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://scenes/ui/AnimaniumSelectUI.tscn" id="5"]
+[ext_resource type="PackedScene" path="res://scenes/ui/RhythmUI.tscn" id="6"]
+
+[node name="OfficeDay" type="Node2D"]
+
+[node name="Background" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.85, 0.8, 0.72, 1)
+
+[node name="OfficeLabel" type="Label" parent="."]
+offset_left = 16.0
+offset_top = 12.0
+offset_right = 500.0
+offset_bottom = 40.0
+text = "Departamento de Gestão de Fendas — Piso 12"
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.4, 0.35, 0.3, 1)
+
+[node name="LeoPlaceholder" type="ColorRect" parent="."]
+offset_left = 280.0
+offset_top = 200.0
+offset_right = 360.0
+offset_bottom = 420.0
+color = Color(0.3, 0.35, 0.55, 1)
+
+[node name="LeoLabel" type="Label" parent="LeoPlaceholder"]
+offset_left = 0.0
+offset_top = -24.0
+offset_right = 80.0
+offset_bottom = 0.0
+text = "Leo"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 12
+
+[node name="DeskPlaceholder" type="ColorRect" parent="."]
+offset_left = 220.0
+offset_top = 380.0
+offset_right = 460.0
+offset_bottom = 440.0
+color = Color(0.6, 0.5, 0.4, 1)
+
+[node name="RhythmSystem" type="Node" parent="."]
+script = ExtResource("2")
+
+[node name="PresentationBattle" type="Node" parent="."]
+script = ExtResource("3")
+
+[node name="ConvictionBar" type="ProgressBar" parent="."]
+offset_left = 160.0
+offset_top = 20.0
+offset_right = 640.0
+offset_bottom = 50.0
+min_value = 0.0
+max_value = 1.0
+value = 0.0
+show_percentage = false
+visible = false
+
+[node name="ConvictionLabel" type="Label" parent="."]
+offset_left = 160.0
+offset_top = 52.0
+offset_right = 640.0
+offset_bottom = 72.0
+text = "Convicção"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 12
+theme_override_colors/font_color = Color(0.5, 0.4, 0.3, 1)
+visible = false
+
+[node name="DialogueBox" parent="." instance=ExtResource("4")]
+
+[node name="AnimaniumSelectUI" parent="." instance=ExtResource("5")]
+
+[node name="RhythmUI" parent="." instance=ExtResource("6")]
+
+[node name="TutorialManager" type="Node" parent="."]
+script = ExtResource("1")
+

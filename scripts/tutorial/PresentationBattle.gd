@@ -27,6 +27,7 @@ var _battle_active: bool = false
 
 @onready var _rhythm_system: RhythmSystem = $"../RhythmSystem"
 @onready var _dialogue_box: Control = $"../DialogueBox"
+@onready var _conviction_bar: ProgressBar = $"../ConvictionBar"
 
 
 func _ready() -> void:
@@ -39,6 +40,9 @@ func start(shape: Dictionary) -> void:
 	conviction = 0.0
 	current_round = 0
 	_battle_active = true
+	_conviction_bar.max_value = 1.0
+	_conviction_bar.value = 0.0
+	_conviction_bar.show()
 	conviction_changed.emit(conviction)
 	_run_round()
 
@@ -96,11 +100,13 @@ func _on_rhythm_completed(accuracy: float, perfect: bool) -> void:
 
 func _fill_conviction(amount: float) -> void:
 	conviction = minf(conviction + amount, WIN_THRESHOLD)
+	_conviction_bar.value = conviction
 	conviction_changed.emit(conviction)
 
 
 func _drain_conviction(amount: float) -> void:
 	conviction = maxf(conviction - amount, 0.0)
+	_conviction_bar.value = conviction
 	conviction_changed.emit(conviction)
 
 
@@ -108,6 +114,7 @@ func _drain_conviction(amount: float) -> void:
 
 func _win() -> void:
 	_battle_active = false
+	_conviction_bar.hide()
 	await _show_dialogue([
 		{"speaker": "Marcos", "text": "...Tá. Me convenceu.\nÉ isso que vamos apresentar pro cliente."},
 	])

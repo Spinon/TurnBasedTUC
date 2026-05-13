@@ -1,0 +1,95 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/cinematic/CinematicPanel.gd" id="1"]
+
+[node name="CinematicPanel" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.02, 0.02, 0.04, 1)
+
+[node name="Illustration" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 6
+visible = false
+
+[node name="AtmosphereParticles" type="CPUParticles2D" parent="."]
+position = Vector2(640, 360)
+amount = 80
+lifetime = 4.0
+randomness = 1.0
+spread = 180.0
+gravity = Vector2(0, -8)
+initial_velocity_min = 10.0
+initial_velocity_max = 30.0
+scale_amount_min = 2.0
+scale_amount_max = 5.0
+color = Color(0.7, 0.8, 1, 0.3)
+emitting = false
+
+[node name="TextBox" type="PanelContainer" parent="."]
+layout_mode = 1
+anchor_top = 0.72
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 1
+
+[node name="VBox" type="VBoxContainer" parent="TextBox"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Speaker" type="Label" parent="TextBox/VBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.9, 0.85, 0.6, 1)
+
+[node name="Text" type="RichTextLabel" parent="TextBox/VBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 72)
+bbcode_enabled = true
+scroll_active = false
+fit_content = true
+theme_override_font_sizes/normal_font_size = 18
+
+[node name="ContinueHint" type="Label" parent="."]
+layout_mode = 1
+anchor_left = 0.75
+anchor_top = 0.91
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -16.0
+offset_bottom = -8.0
+text = "▶ continuar"
+horizontal_alignment = 2
+theme_override_font_sizes/font_size = 13
+theme_override_colors/font_color = Color(0.7, 0.7, 0.9, 0.8)
+visible = false
+
+[node name="Overlay" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+mouse_filter = 2
