@@ -1,0 +1,66 @@
+{
+	"id": "julia",
+	"name": "Júlia",
+	"is_enemy": false,
+	"max_hp": 260,
+	"max_mp": 120,
+	"max_echo": 0,
+	"atk": 16,
+	"mag": 34,
+	"def": 12,
+	"res": 22,
+	"spd": 18,
+	"skills": [
+		{
+			"id": "analise_de_fenda",
+			"name": "Análise de Fenda",
+			"description": "Júlia estuda o inimigo — revela fraquezas e reduz DEF por 3 turnos.",
+			"type": "buff",
+			"power": 0.0,
+			"mp_cost": 10,
+			"echo_cost": 0,
+			"target": "single_enemy",
+			"buff_stat": "def",
+			"buff_multiplier": 0.65,
+			"buff_duration": 3,
+			"animation": "scan_beam"
+		},
+		{
+			"id": "pulso_dimensional",
+			"name": "Pulso Dimensional",
+			"description": "Júlia canaliza energia de fenda em um raio mágico concentrado.",
+			"type": "magical",
+			"power": 1.7,
+			"mp_cost": 16,
+			"echo_cost": 0,
+			"target": "single_enemy",
+			"animation": "rift_beam"
+		},
+		{
+			"id": "barreira_tecnica",
+			"name": "Barreira Técnica",
+			"description": "Júlia cria uma barreira de energia que protege toda a party.",
+			"type": "buff",
+			"power": 0.0,
+			"mp_cost": 20,
+			"echo_cost": 0,
+			"target": "all_allies",
+			"buff_stat": "res",
+			"buff_multiplier": 1.35,
+			"buff_duration": 2,
+			"animation": "barrier_dome"
+		},
+		{
+			"id": "cura_dimensional",
+			"name": "Cura Dimensional",
+			"description": "Júlia usa resíduos de energia de fenda para restaurar HP de um aliado.",
+			"type": "heal",
+			"power": 1.5,
+			"mp_cost": 18,
+			"echo_cost": 0,
+			"target": "single_ally",
+			"animation": "rift_heal"
+		}
+	],
+	"aiko_skills": []
+}

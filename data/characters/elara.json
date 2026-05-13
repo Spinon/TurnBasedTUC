@@ -1,0 +1,65 @@
+{
+	"id": "elara",
+	"name": "Elara",
+	"is_enemy": false,
+	"max_hp": 420,
+	"max_mp": 60,
+	"max_echo": 0,
+	"atk": 38,
+	"mag": 12,
+	"def": 28,
+	"res": 18,
+	"spd": 12,
+	"skills": [
+		{
+			"id": "golpe_solamyr",
+			"name": "Golpe Solamyr",
+			"description": "Técnica da Casta Solamyr — ataque preciso que ignora parte da DEF inimiga.",
+			"type": "physical",
+			"power": 2.0,
+			"mp_cost": 12,
+			"echo_cost": 0,
+			"target": "single_enemy",
+			"def_pierce": 0.4,
+			"animation": "solamyr_strike"
+		},
+		{
+			"id": "postura_de_guarda",
+			"name": "Postura de Guarda",
+			"description": "Elara assume postura defensiva — aumenta DEF própria e de um aliado adjacente.",
+			"type": "buff",
+			"power": 0.0,
+			"mp_cost": 8,
+			"echo_cost": 0,
+			"target": "self",
+			"buff_stat": "def",
+			"buff_multiplier": 1.6,
+			"buff_duration": 2,
+			"animation": "guard_stance"
+		},
+		{
+			"id": "pressao_de_elite",
+			"name": "Pressão de Elite",
+			"description": "Elara avança com força bruta — atinge todos os inimigos com dano reduzido.",
+			"type": "physical",
+			"power": 1.0,
+			"mp_cost": 18,
+			"echo_cost": 0,
+			"target": "all_enemies",
+			"animation": "elite_charge"
+		},
+		{
+			"id": "sacrificio_solamyr",
+			"name": "Sacrifício Solamyr",
+			"description": "Elara invoca o último ensinamento da Casta — causa dano massivo mas perde 20% do HP próprio.",
+			"type": "physical",
+			"power": 3.0,
+			"mp_cost": 25,
+			"echo_cost": 0,
+			"target": "single_enemy",
+			"self_damage_percent": 0.2,
+			"animation": "solamyr_sacrifice"
+		}
+	],
+	"aiko_skills": []
+}

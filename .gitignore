@@ -1,0 +1,28 @@
+# Godot
+.godot/
+*.translation
+export_presets.cfg
+
+# Saves e dados do usuário (não versionar)
+*.save
+user://
+
+# Documentos do livro (não versionar)
+*.docx
+*.doc
+
+# Pasta Claude local
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp
+
+# Downloads temporários
+*.tmp
